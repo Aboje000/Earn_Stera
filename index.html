@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="container">
+    <h1>Earn <span>Stera</span></h1> 
+    <br>
+    <div class="div1">
+       <img src="Earn_img/television.png" alt=""> 
+    </div>
+    <br>
+    <br>
+    <br>
+    <div>
+        <button id="btn" onclick="change()">
+            Explore 
+        </button>
+    </div>
+  
+    </div>
+    <style>
+   *{
+       font-family: fantasy;
+   }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    margin:0;
+    padding:0;
+}
+
+.container {
+    background: white;
+    padding: 40px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    width:100%;
+    height:100vh;
+    text-align: center;
+}
+
+
+h1 {
+    font-size:2rem;
+    margin-bottom: 20px;
+    
+}
+span{
+    color:orange;
+    font-family: cursive;
+}
+.div1 img{
+    width:400px;
+    border-radius:8px;
+    box-shadow:2px 1px 9px black;
+}
+button{
+    padding:20px 60px;
+    border-radius:10px;
+    border:none;
+    
+    color:white;
+    background:orange;
+    font-weight:bold;
+    font-size:1rem;
+}
+
+    </style>
+    
+    <script>
+        function change2(){
+            document.getElementById("btn").innerHTML="Redirecting..."
+        }
+        function change3(){
+            window.location.href="homepage.html"
+        }
+ function change(){
+    document.getElementById("btn").style.background ="#2b58ff";
+    setTimeout(change2,300)
+    setTimeout(change3,2000)
+    
+ }
+ 
+ 
+    </script>
+</body>
+</html>
